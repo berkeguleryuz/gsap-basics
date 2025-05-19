@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { SplitText } from "gsap/all";
 import { collection } from "@/constants/collection";
 import Image from "next/image";
+import Link from "next/link";
 
 const IMAGE_COUNT = 25;
 const RADIUS = 275;
@@ -261,14 +262,11 @@ const HomePage = () => {
   return (
     <>
       <nav className="absolute left-0 w-screen p-8 flex justify-between items-center z-20 top-0">
-        <a
+        <Link
           href="#berke"
           className="no-underline text-[#1f1f1f] font-['Helvetica Neue',sans-serif] text-[15px] font-semibold leading-none tracking-tight">
           Berke
-        </a>
-        <p className="no-underline text-[#1f1f1f] font-['Helvetica Neue',sans-serif] text-[15px] font-semibold leading-none tracking-tight">
-          Download
-        </p>
+        </Link>
       </nav>
       <main className="relative w-screen h-[100svh] overflow-hidden">
         <div className="relative w-full h-full flex justify-center items-center [transform-style:preserve-3d] [perspective:2000px] will-change-transform">
